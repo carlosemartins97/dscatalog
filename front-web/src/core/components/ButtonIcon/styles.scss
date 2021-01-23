@@ -1,6 +1,5 @@
 .btn-icon {
-    height: 70px;
-    width: 380px;
+    height: 4.5rem;
     border-radius: 10px 0 0 10px;
     text-transform: uppercase;
 }
@@ -13,4 +12,9 @@
     justify-content: center;
     align-items: center;
     color: #FFF;
+}
+
+.btn-button {
+    width: 100%;
+    display: flex;
 }

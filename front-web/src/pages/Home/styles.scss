@@ -5,9 +5,7 @@
 }
 
 .home-content {
-    padding-top: 155px;
-    padding-bottom: 150px;
-    padding-left: 100px;
+    padding: 10em 2em 10em 2em;
 }
 
 .text-title {
@@ -27,4 +25,26 @@
 
 .main-image {
     width: 100%;
+}
+
+@media screen and (max-width: 1040px) {
+    .image-content {
+        padding-top: 10rem;
+    }
+    .home-content {
+        text-align: center;
+        padding: 5em 1em 5em 1em;
+    }
+    .home-btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .image-content {
+        padding-top: 0;
+    }
+    .home-content {
+        padding: 2em 0 2em 0;
+    }
 }

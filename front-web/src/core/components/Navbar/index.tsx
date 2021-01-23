@@ -1,34 +1,31 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import './styles.scss';
+import { Navbar as Navb, Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
-const Navbar = () => (
-    <nav className="row bg-primary main-nav">
-        <div className="col-2">
-            <Link to="/" className="nav-logo-text">
-                <h4>Tech Trade</h4>
-            </Link>
-        </div>
-        <div className="col-6 offset-2">
-            <ul className="main-menu">
-                <li>
-                    <NavLink to="/" activeClassName="active" exact>
-                        HOME
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/products" activeClassName="active">
-                        CATÁLOGO
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/admin" activeClassName="active">
-                        ADMIN
-                    </NavLink>
-                </li>
-            </ul>
-        </div>
-    </nav>
-);
+const Navbar = () => {
+    return (
+        <Navb collapseOnSelect expand="lg" bg="primary" variant="dark" className="main-nav">
+            <Navb.Brand as={NavLink} to="/">TechTrade</Navb.Brand>
+            <Navb.Toggle aria-controls="responsive-navbar-nav" />
+            <Navb.Collapse id="responsive-navbar-nav">
+                <Nav className="m-auto offset-5 menu-nav">
+                    <Nav.Link as={NavLink} to="/" exact>
+                        Início
+                    </Nav.Link>
+                    <Nav.Link as={NavLink} to="/products">
+                        Catálogo
+                    </Nav.Link>
+
+                </Nav>
+                <Nav className="menu-nav">
+                    <Nav.Link as={NavLink} to="/admin">
+                        Login
+                    </Nav.Link>
+                </Nav>
+            </Navb.Collapse>
+        </Navb>
+    );
+};
 
 export default Navbar;
