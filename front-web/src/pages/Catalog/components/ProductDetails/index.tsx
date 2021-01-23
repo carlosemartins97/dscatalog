@@ -34,8 +34,8 @@ const ProductDetails = () => {
                     <ArrowIcon className="icon-goback" />
                     <span className="text-goback">Voltar</span>
                 </Link>
-                <div className="row">
-                    <div className="col-6 pr-5">
+                <div className="d-flex product-content">
+                    <div className="col-12 col-lg-5 product-details-image">
                         {isLoading ? <ProductInfoLoader /> : (
                             <>
                                 <div className="product-details-card text-center">
@@ -47,7 +47,7 @@ const ProductDetails = () => {
                             </>
                         )}
                     </div>
-                    <div className="col-6 product-details-card">
+                    <div className="col-12 col-lg-7 product-details-card">
                         {isLoading ? <ProductDescriptionLoader /> : (
                             <>
                                 <h1 className="product-description-title">Descrição do produto</h1>

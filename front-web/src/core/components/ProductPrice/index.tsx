@@ -14,7 +14,6 @@ const ProductPrice = ({price}: Props) => (
         <span className="product-currency">R$</span>
         <h3 className="product-price">
             {formatPrice(price)}
-            
         </h3>
     </div>
 );
