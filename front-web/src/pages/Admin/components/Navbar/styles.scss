@@ -1,0 +1,29 @@
+.admin-nav-container {
+    width: 300px;
+    height: calc(100vh - 56px);
+    background-color: #FFF;
+}
+
+.admin-nav-item {
+    height: 80px;
+    display: flex;
+    border-bottom: 1px solid #E1E1E1;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    color: #9E9E9E;
+
+    &.active {
+        background: #ff6e133b;
+        border-radius: unset;
+        color: #E36414;
+    }
+
+    &:hover {
+        color: #E36414;
+    }
+}
