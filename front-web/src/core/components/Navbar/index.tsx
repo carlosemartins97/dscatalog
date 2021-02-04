@@ -20,7 +20,7 @@ const Navbar = () => {
                 </Nav>
                 <Nav className="menu-nav">
                     <Nav.Link as={NavLink} to="/admin">
-                        Login
+                        Admin
                     </Nav.Link>
                 </Nav>
             </Navb.Collapse>
